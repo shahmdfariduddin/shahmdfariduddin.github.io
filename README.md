@@ -1,16 +1,13 @@
-## Hi there 👋
+# Dr. Farid Portfolio
 
-<!--
-**shahmdfariduddin/shahmdfariduddin** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+A responsive portfolio built with plain HTML and CSS.
 
-Here are some ideas to get you started:
+## Setup
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+1. Open index.html in a browser.
+2. Add a portrait as assets/dr-farid.jpg and set the portrait image source in index.html to that path.
+3. Add the CV as assets/Dr-Farid-CV.pdf.
+4. Replace the placeholder email and social links in index.html.
+5. Update project and publication details as work is published.
+
+No build step, JavaScript, React, or external framework is required.

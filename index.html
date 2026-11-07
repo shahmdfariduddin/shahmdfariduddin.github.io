@@ -20,6 +20,60 @@
   />
 
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- Photo placeholder styling; the rest of the website uses styles.css. -->
+  <style>
+    .hero-photo {
+      position: relative;
+      width: 100%;
+      max-width: 285px;
+      aspect-ratio: 4 / 5;
+      margin: 0 auto 1.75rem;
+      overflow: hidden;
+      border: 1px solid rgba(89, 75, 64, 0.16);
+      border-radius: 12px;
+      background: #eee7df;
+    }
+
+    .hero-photo img {
+      display: block;
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 25%;
+    }
+
+    .hero-photo-placeholder {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 1.25rem;
+      color: #766b62;
+      text-align: center;
+      font-family: "DM Sans", sans-serif;
+      font-size: 0.875rem;
+      line-height: 1.5;
+    }
+
+    .hero-photo-placeholder svg {
+      width: 52px;
+      height: 52px;
+      stroke: currentColor;
+      opacity: 0.65;
+    }
+
+    @media (max-width: 767px) {
+      .hero-photo {
+        max-width: 220px;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -94,6 +148,32 @@
 
 
         <aside class="hero-card">
+
+          <!--
+            YOUR PROFILE PHOTO:
+            1. Save your photo as profile-photo.jpg.
+            2. Put it in the same folder as index.html.
+            3. Or change src below to your actual photo filename.
+            Until then, this frame displays a placeholder.
+          -->
+          <div class="hero-photo">
+            <div class="hero-photo-placeholder" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"
+                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="8" r="4" />
+                <path d="M4.5 21c0-4.2 3.1-7 7.5-7s7.5 2.8 7.5 7" />
+              </svg>
+              <span>Your profile photo<br />will appear here</span>
+            </div>
+            <img
+              src="profile-photo.jpg"
+              alt="Portrait of Shah Md Farid Uddin"
+              width="400"
+              height="500"
+              loading="eager"
+              onerror="this.style.display='none'"
+            />
+          </div>
 
           <p class="card-label">Current Focus</p>
 
